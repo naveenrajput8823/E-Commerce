@@ -1,0 +1,133 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 8%;
+    min-height: 90vh;
+    background: linear-gradient(135deg, #f8f9fa, #eef2ff);
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-tag {
+    display: inline-block;
+    background: #ffe9c7;
+    color: #ff6600;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #0d6efd;
+}
+
+.hero-content p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+    max-width: 550px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.shop-btn,
+.explore-btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.shop-btn {
+    background: #0d6efd;
+    color: white;
+}
+
+.shop-btn:hover {
+    background: #0b5ed7;
+    transform: translateY(-3px);
+}
+
+.explore-btn {
+    background: white;
+    border: 2px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.explore-btn:hover {
+    background: #0d6efd;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 520px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-content p {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .shop-btn,
+    .explore-btn {
+        width: 100%;
+    }
+}
