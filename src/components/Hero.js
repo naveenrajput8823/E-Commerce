@@ -24,7 +24,10 @@ const Hero = () => {
         </div>
         
         <div className='hero-image'>
-          {/* <img scr={heroImage} alt='Shopping Hero' /> */}
+            <img
+          src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+          alt="shopping"
+        />
         </div>
       </section>
     </>

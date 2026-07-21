@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/Hero'
 import CategoryCard from '../components/CategoryCard'
 import ProductCard from '../components/ProductCard'
-import Footer from '../components/Footer'
+
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <Hero/>
       <CategoryCard/>
       <ProductCard/>
+      
     </>
   )
 }
