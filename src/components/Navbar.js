@@ -1,15 +1,16 @@
 import React from 'react'
 import "../styles/Navbar.css"
 import { FaHeart, FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa'
+import logo from  "../assets/images/logo.png"
 
 
-function Navbar(){
+function Navbar() {
   return (
     <>
       <header className='navbar'>
 
         <div className='logo'>
-          <h2>OnlineShop</h2>
+          <img src={logo} alt="Logo" />
         </div>
 
         <ul className='nav-menu'>
@@ -23,20 +24,20 @@ function Navbar(){
 
           <div className='search-box'>
             <FaSearch className="search-icon" />
-            <input type='text' placeholder='Search Products....'/>
+            <input type='text' placeholder='Search Products....' />
           </div>
 
           <div className='icon'>
-            <FaHeart/>
+            <FaHeart />
           </div>
 
           <div className='icon cart'>
-            <FaShoppingCart/>
+            <FaShoppingCart />
             <span className='cart-count'>0</span>
           </div>
 
           <button className='login-btn'>
-            <FaUser/>
+            <FaUser />
           </button>
 
         </div>

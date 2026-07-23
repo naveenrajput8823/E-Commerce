@@ -134,3 +134,7 @@
 .login-btn:hover {
   background: #1d4ed8;
 }
+.logo img{
+    width:120px;
+    height:auto;
+}

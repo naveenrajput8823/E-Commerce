@@ -1,0 +1,84 @@
+/* ==========================
+   SEARCH BAR
+========================== */
+
+.search-section{
+    width:100%;
+    padding:40px 8%;
+    background:#f8fafc;
+}
+
+.search-container{
+    background:#fff;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    display:flex;
+    gap:20px;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Input */
+
+.search-container input{
+    flex:1;
+    min-width:260px;
+    padding:14px 18px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    font-size:1rem;
+}
+
+.search-container input:focus{
+    border-color:#2563eb;
+}
+
+/* Select */
+
+.search-container select{
+    min-width:180px;
+    padding:14px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+/* Button */
+
+.search-container button{
+    padding:14px 30px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.search-container button:hover{
+    background:#1d4ed8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.search-container{
+    flex-direction:column;
+}
+
+.search-container input,
+.search-container select,
+.search-container button{
+    width:100%;
+}
+
+}
